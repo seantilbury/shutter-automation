@@ -1,0 +1,993 @@
+[
+    {
+        "id": "bb8f2e20.411f6",
+        "type": "tab",
+        "label": "Office Automation"
+    },
+    {
+        "id": "208f2df0.f1d792",
+        "type": "ui_group",
+        "z": "",
+        "name": "Monitoring",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "ddbc4d18.94175",
+        "type": "ui_group",
+        "z": "",
+        "name": "Temps",
+        "tab": "d743cd12.72a5c",
+        "order": 1,
+        "disp": false,
+        "width": "6"
+    },
+    {
+        "id": "b7af7a66.7c2c58",
+        "type": "ui_base",
+        "z": "",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            }
+        },
+        "site": {
+            "name": "Office Automation",
+            "hideToolbar": "false",
+            "allowSwipe": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "29cfdc57.e08ef4",
+        "type": "ui_group",
+        "z": "",
+        "name": "Controls",
+        "tab": "",
+        "order": 3,
+        "disp": false,
+        "width": "6"
+    },
+    {
+        "id": "6b2d0f06.5dbf9",
+        "type": "ui_group",
+        "z": "",
+        "name": "Monitoring",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "daf2a56c.841058",
+        "type": "ui_group",
+        "z": "",
+        "name": "Shutters",
+        "tab": "",
+        "order": 1,
+        "disp": false,
+        "width": "6"
+    },
+    {
+        "id": "202455e9.ad927a",
+        "type": "ui_base",
+        "z": "",
+        "name": "Office Automation Dashboard",
+        "theme": "theme-light"
+    },
+    {
+        "id": "6d4b2431.c92adc",
+        "type": "ui_group",
+        "z": "",
+        "name": "Controls",
+        "tab": "",
+        "order": 3,
+        "disp": false,
+        "width": "6"
+    },
+    {
+        "id": "77e19080.2e564",
+        "type": "mqtt-broker",
+        "z": "",
+        "broker": "192.168.3.105",
+        "port": "1883",
+        "tls": "",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": false,
+        "keepalive": "60",
+        "cleansession": true,
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "birthTopic": "officetemp",
+        "birthQos": "0",
+        "birthPayload": ""
+    },
+    {
+        "id": "72bb42c4.c1dd2c",
+        "type": "websocket-client",
+        "z": "",
+        "path": "ws://mqtt.dioty.co:8080",
+        "wholemsg": "true"
+    },
+    {
+        "id": "4ada5318.216e3c",
+        "type": "ui_group",
+        "z": "",
+        "name": "Controls",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "4663f343.47354c",
+        "type": "ui_group",
+        "z": "",
+        "name": "Controls",
+        "tab": "feca669f.dcfc48",
+        "order": 3,
+        "disp": false,
+        "width": "6"
+    },
+    {
+        "id": "d5dd621b.4b3b1",
+        "type": "ui_group",
+        "z": "",
+        "name": "Shutters",
+        "tab": "feca669f.dcfc48",
+        "order": 1,
+        "disp": false,
+        "width": "6"
+    },
+    {
+        "id": "feca669f.dcfc48",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Automation",
+        "icon": "dashboard",
+        "order": 2
+    },
+    {
+        "id": "b573f18a.02d1e",
+        "type": "wiotp-credentials",
+        "z": "",
+        "name": "Test",
+        "org": "4hiht0",
+        "serverName": "",
+        "devType": "Test",
+        "devId": "a997b821.968ec8",
+        "keepalive": "60",
+        "cleansession": true,
+        "tls": "",
+        "usetls": true
+    },
+    {
+        "id": "d743cd12.72a5c",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Monitoring",
+        "icon": "dashboard",
+        "order": 2
+    },
+    {
+        "id": "4de35dad.6a7c94",
+        "type": "rpi-gpio out",
+        "z": "bb8f2e20.411f6",
+        "name": "13 Door Open Relay",
+        "pin": "13",
+        "set": true,
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "x": 1000,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "666155d5.02f20c",
+        "type": "rpi-gpio out",
+        "z": "bb8f2e20.411f6",
+        "name": "12 Door Close Relay",
+        "pin": "12",
+        "set": true,
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "x": 1009,
+        "y": 176,
+        "wires": []
+    },
+    {
+        "id": "a3b08715.cfd528",
+        "type": "function",
+        "z": "bb8f2e20.411f6",
+        "name": "Toggle 0/1 on input",
+        "func": "\ncontext.state = context.state || 0;\n\n(context.state == 0) ? context.state = 1 : context.state = 0;\nmsg.payload = context.state;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 310,
+        "y": 40,
+        "wires": [
+            [
+                "6e603426.c3368c"
+            ]
+        ]
+    },
+    {
+        "id": "6e603426.c3368c",
+        "type": "trigger",
+        "z": "bb8f2e20.411f6",
+        "op1": "1",
+        "op2": "0",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "17",
+        "extend": false,
+        "units": "s",
+        "reset": "false",
+        "name": "",
+        "x": 590,
+        "y": 40,
+        "wires": [
+            [
+                "4de35dad.6a7c94",
+                "13c6d6b0.6d4009"
+            ]
+        ]
+    },
+    {
+        "id": "aa4e13be.91fdb",
+        "type": "change",
+        "z": "bb8f2e20.411f6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "1",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 491.6666259765625,
+        "y": 93.33332824707031,
+        "wires": [
+            [
+                "5116b90f.cc6c88"
+            ]
+        ]
+    },
+    {
+        "id": "274224c6.90046c",
+        "type": "ui_switch",
+        "z": "bb8f2e20.411f6",
+        "name": "",
+        "label": "Lights",
+        "group": "4663f343.47354c",
+        "order": 1,
+        "width": "2",
+        "height": "1",
+        "passthru": true,
+        "topic": "",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 110,
+        "y": 440,
+        "wires": [
+            [
+                "fb5e57b2.354578",
+                "e15ef67b.b6b5f8"
+            ]
+        ]
+    },
+    {
+        "id": "fb5e57b2.354578",
+        "type": "rpi-gpio out",
+        "z": "bb8f2e20.411f6",
+        "name": "Lights",
+        "pin": "11",
+        "set": true,
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "x": 990,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "fd1bac5b.581b6",
+        "type": "ui_button",
+        "z": "bb8f2e20.411f6",
+        "name": "",
+        "group": "d5dd621b.4b3b1",
+        "order": 4,
+        "width": "0",
+        "height": "0",
+        "passthru": false,
+        "label": "Close Shutter ",
+        "color": "",
+        "bgcolor": "Green",
+        "icon": "",
+        "payload": "",
+        "payloadType": "date",
+        "topic": "Door Close",
+        "x": 111.6666259765625,
+        "y": 194.3333282470703,
+        "wires": [
+            [
+                "3ac2ea6b.bc8886"
+            ]
+        ]
+    },
+    {
+        "id": "668d7ed4.61c0b",
+        "type": "ui_button",
+        "z": "bb8f2e20.411f6",
+        "name": "",
+        "group": "d5dd621b.4b3b1",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "passthru": false,
+        "label": "Open Shutter",
+        "color": "",
+        "bgcolor": "Green",
+        "icon": "",
+        "payload": "",
+        "payloadType": "date",
+        "topic": "Door Open",
+        "x": 90,
+        "y": 40,
+        "wires": [
+            [
+                "a3b08715.cfd528"
+            ]
+        ]
+    },
+    {
+        "id": "59e653a0.d7df9c",
+        "type": "ui_button",
+        "z": "bb8f2e20.411f6",
+        "name": "",
+        "group": "d5dd621b.4b3b1",
+        "order": 2,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "label": "Stop Shutter",
+        "color": "",
+        "bgcolor": "red",
+        "icon": "",
+        "payload": "false",
+        "payloadType": "str",
+        "topic": "",
+        "x": 99.6666259765625,
+        "y": 95.33332824707031,
+        "wires": [
+            [
+                "aa4e13be.91fdb",
+                "6e603426.c3368c",
+                "e5382be4.aaeb78"
+            ]
+        ]
+    },
+    {
+        "id": "3ac2ea6b.bc8886",
+        "type": "function",
+        "z": "bb8f2e20.411f6",
+        "name": "Toggle 0/1 on input",
+        "func": "\ncontext.state = context.state || 0;\n\n(context.state == 0) ? context.state = 1 : context.state = 0;\nmsg.payload = context.state;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 300.6666259765625,
+        "y": 193.3333282470703,
+        "wires": [
+            [
+                "e5382be4.aaeb78"
+            ]
+        ]
+    },
+    {
+        "id": "e5382be4.aaeb78",
+        "type": "trigger",
+        "z": "bb8f2e20.411f6",
+        "op1": "1",
+        "op2": "0",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "17",
+        "extend": false,
+        "units": "s",
+        "reset": "false",
+        "name": "",
+        "x": 590,
+        "y": 180,
+        "wires": [
+            [
+                "666155d5.02f20c",
+                "b964d75a.3e6718"
+            ]
+        ]
+    },
+    {
+        "id": "5116b90f.cc6c88",
+        "type": "rpi-gpio out",
+        "z": "bb8f2e20.411f6",
+        "name": "15 STOP",
+        "pin": "15",
+        "set": true,
+        "level": "1",
+        "freq": "",
+        "out": "out",
+        "x": 965,
+        "y": 116,
+        "wires": []
+    },
+    {
+        "id": "a29b6657.5f1238",
+        "type": "ui_button",
+        "z": "bb8f2e20.411f6",
+        "name": "",
+        "group": "d5dd621b.4b3b1",
+        "order": 3,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "label": "Enable / Reset",
+        "color": "",
+        "bgcolor": "green",
+        "icon": "",
+        "payload": "em-stop reset",
+        "payloadType": "str",
+        "topic": "",
+        "x": 109.6666259765625,
+        "y": 149.3333282470703,
+        "wires": [
+            [
+                "ef37f445.2ee5d8"
+            ]
+        ]
+    },
+    {
+        "id": "ef37f445.2ee5d8",
+        "type": "change",
+        "z": "bb8f2e20.411f6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "0",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 495.6666259765625,
+        "y": 129.3333282470703,
+        "wires": [
+            [
+                "5116b90f.cc6c88",
+                "4de35dad.6a7c94",
+                "666155d5.02f20c"
+            ]
+        ]
+    },
+    {
+        "id": "13c6d6b0.6d4009",
+        "type": "ui_text",
+        "z": "bb8f2e20.411f6",
+        "group": "d5dd621b.4b3b1",
+        "order": 5,
+        "width": "2",
+        "height": "1",
+        "name": "",
+        "label": "open status",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "x": 1023,
+        "y": 76,
+        "wires": []
+    },
+    {
+        "id": "b964d75a.3e6718",
+        "type": "ui_text",
+        "z": "bb8f2e20.411f6",
+        "group": "d5dd621b.4b3b1",
+        "order": 6,
+        "width": "2",
+        "height": "1",
+        "name": "",
+        "label": "close status",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "x": 995,
+        "y": 239,
+        "wires": []
+    },
+    {
+        "id": "e15ef67b.b6b5f8",
+        "type": "ui_text",
+        "z": "bb8f2e20.411f6",
+        "group": "4663f343.47354c",
+        "order": 0,
+        "width": "2",
+        "height": "1",
+        "name": "",
+        "label": " Lights status",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "x": 950,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "16c731a7.1ea12e",
+        "type": "file",
+        "z": "bb8f2e20.411f6",
+        "name": "Logfile",
+        "filename": "/home/pi/Desktop/shutterlog.txt",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "x": 667,
+        "y": 292,
+        "wires": []
+    },
+    {
+        "id": "41086290.75167c",
+        "type": "ds18b20",
+        "z": "bb8f2e20.411f6",
+        "name": "Inside",
+        "sensorid": "28-051686b85aff",
+        "timer": "1",
+        "x": 410,
+        "y": 600,
+        "wires": [
+            [
+                "2aa51759.b9a708",
+                "31085f9b.49c12",
+                "b567da13.fb28d8",
+                "f4ed8409.95a338",
+                "4f94eaad.629854"
+            ]
+        ]
+    },
+    {
+        "id": "2aa51759.b9a708",
+        "type": "ui_gauge",
+        "z": "bb8f2e20.411f6",
+        "name": "AC Output Temperature",
+        "group": "ddbc4d18.94175",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "AC Output Temperature",
+        "label": "'c",
+        "format": "{{value}}",
+        "min": "10",
+        "max": "35",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "16",
+        "seg2": "25",
+        "x": 967,
+        "y": 623,
+        "wires": []
+    },
+    {
+        "id": "6a2b0703.99e968",
+        "type": "ds18b20",
+        "z": "bb8f2e20.411f6",
+        "name": "Outside",
+        "sensorid": "28-051686c22bff",
+        "timer": "1",
+        "x": 415,
+        "y": 693,
+        "wires": [
+            [
+                "bea5425.d4e62c",
+                "323d384f.2d1428"
+            ]
+        ]
+    },
+    {
+        "id": "31085f9b.49c12",
+        "type": "debug",
+        "z": "bb8f2e20.411f6",
+        "name": "",
+        "active": true,
+        "console": "false",
+        "complete": "false",
+        "x": 863,
+        "y": 522,
+        "wires": []
+    },
+    {
+        "id": "85594df1.9c108",
+        "type": "file",
+        "z": "bb8f2e20.411f6",
+        "name": "templog",
+        "filename": "/home/pi/Desktop/templog.txt",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "x": 948,
+        "y": 753,
+        "wires": []
+    },
+    {
+        "id": "b567da13.fb28d8",
+        "type": "ui_chart",
+        "z": "bb8f2e20.411f6",
+        "name": "",
+        "group": "ddbc4d18.94175",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "AC Temperature Log",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "no data",
+        "ymin": "10",
+        "ymax": "35",
+        "removeOlder": "1",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "604800",
+        "cutout": 0,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "x": 971,
+        "y": 579,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "f4ed8409.95a338",
+        "type": "join",
+        "z": "bb8f2e20.411f6",
+        "name": "",
+        "mode": "custom",
+        "build": "string",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "timeout": "",
+        "count": "",
+        "x": 647,
+        "y": 491,
+        "wires": [
+            [
+                "31085f9b.49c12"
+            ]
+        ]
+    },
+    {
+        "id": "4d450e28.9a6d6",
+        "type": "inject",
+        "z": "bb8f2e20.411f6",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "x": 413,
+        "y": 523,
+        "wires": [
+            [
+                "f4ed8409.95a338"
+            ]
+        ]
+    },
+    {
+        "id": "323d384f.2d1428",
+        "type": "ui_gauge",
+        "z": "bb8f2e20.411f6",
+        "name": "Temp Gauge",
+        "group": "ddbc4d18.94175",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "AC Temp",
+        "label": "'c",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "35",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "16",
+        "seg2": "25",
+        "x": 973,
+        "y": 703,
+        "wires": []
+    },
+    {
+        "id": "bea5425.d4e62c",
+        "type": "ui_chart",
+        "z": "bb8f2e20.411f6",
+        "name": "",
+        "group": "ddbc4d18.94175",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "label": "Office Temperature",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "no data",
+        "ymin": "0",
+        "ymax": "35",
+        "removeOlder": "1",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "604800",
+        "cutout": 0,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "x": 992,
+        "y": 665,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "6dfcc61d.306f78",
+        "type": "mqtt in",
+        "z": "bb8f2e20.411f6",
+        "name": "",
+        "topic": "officetemp",
+        "qos": "2",
+        "broker": "77e19080.2e564",
+        "x": 440,
+        "y": 780,
+        "wires": [
+            [
+                "a44edb41.9afa48"
+            ]
+        ]
+    },
+    {
+        "id": "a44edb41.9afa48",
+        "type": "debug",
+        "z": "bb8f2e20.411f6",
+        "name": "",
+        "active": true,
+        "console": "false",
+        "complete": "payload",
+        "x": 730,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "4f94eaad.629854",
+        "type": "mqtt out",
+        "z": "bb8f2e20.411f6",
+        "name": "",
+        "topic": "officetemp",
+        "qos": "",
+        "retain": "",
+        "broker": "77e19080.2e564",
+        "x": 1204,
+        "y": 526,
+        "wires": []
+    },
+    {
+        "id": "86dc5e6d.5ffa",
+        "type": "mqtt in",
+        "z": "bb8f2e20.411f6",
+        "name": "",
+        "topic": "officetemp",
+        "qos": "2",
+        "broker": "77e19080.2e564",
+        "x": 443,
+        "y": 883,
+        "wires": [
+            [
+                "413dd65c.383008"
+            ]
+        ]
+    },
+    {
+        "id": "413dd65c.383008",
+        "type": "debug",
+        "z": "bb8f2e20.411f6",
+        "name": "from mqtt",
+        "active": true,
+        "console": "false",
+        "complete": "payload",
+        "x": 757,
+        "y": 882,
+        "wires": []
+    },
+    {
+        "id": "77566ec4.aa07d",
+        "type": "inject",
+        "z": "bb8f2e20.411f6",
+        "name": "shutdown!",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "58 16 * * *",
+        "once": false,
+        "x": 130,
+        "y": 280,
+        "wires": [
+            [
+                "4278489.e2eaab8"
+            ]
+        ]
+    },
+    {
+        "id": "4278489.e2eaab8",
+        "type": "exec",
+        "z": "bb8f2e20.411f6",
+        "command": "sudo reboot",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "",
+        "timer": "",
+        "oldrc": false,
+        "name": "restart the Pi",
+        "x": 304,
+        "y": 279,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "9065f281.3e77e",
+        "type": "ui_button",
+        "z": "bb8f2e20.411f6",
+        "name": "",
+        "group": "d5dd621b.4b3b1",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Reboot",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "date",
+        "topic": "",
+        "x": 120,
+        "y": 320,
+        "wires": [
+            [
+                "4278489.e2eaab8"
+            ]
+        ]
+    }
+]
